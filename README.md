@@ -8,6 +8,6 @@ This program tracks your head movement and can move the mouse to either monitors
 2) Run the reqs.py file before running the MouseHead.py
 3) Run MouseHead with the usual "python3 MouseHead.py" in your terminal
 
-### Status:
-Current version is only capable for monitors on the right, but the code can be modified quite easily for a monitor on the left, or more than 2 monitor setups.
-Currently working on a GUI on the Qt Framework.
+#### Status:
+1) Current version is only capable for monitors on the right, but the code can be modified quite easily for a monitor on the left, or more than 2 monitor setups.
+2) Primarily focusing on a GUI which is customizable for a wide range of workflows. (Qt Framework)
