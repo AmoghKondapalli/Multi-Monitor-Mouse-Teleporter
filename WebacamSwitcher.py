@@ -11,6 +11,8 @@ pmy = int(input())
 print("Secondary Monitor Screen Size")
 smx = int(input())
 smy = int(input())
+print("Webcam ? (y/n)")
+ans = str(input())
 
 
 mp_face_mesh = mp.solutions.face_mesh
@@ -74,10 +76,11 @@ while cap.isOpened():
             x = angles[0] * 360
             y = angles[1] * 360
             z = angles[2] * 360
+            text = str("Mouse Active")
 
             if y < -10:
                 text = "looking left"
-            elif y > 13:
+            elif y > 13.5:
                 text = "looking right"
                 if ntimes ==1:
                     autogui.moveTo(pmx+smx/2,smy/2)
@@ -87,6 +90,10 @@ while cap.isOpened():
                 if ntimes==0:
                     autogui.moveTo(pmx/2,pmy/2)
                     ntimes = 1
+
+
+
+
 
 
 
@@ -105,10 +112,13 @@ while cap.isOpened():
         fps = 1/totalTime
 
         cv2.putText(image, f'FPS: {int(fps)}', (20,450), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0,255,0),2)
-    cv2.imshow('Head Pose Estimation', image)
+
+    if ans == "y":
+        cv2.imshow('Head Pose Estimation', image)
 
     if cv2.waitKey(5) & 0xFF == 27:
         break
+
 cap.release()
 
 
