@@ -1,7 +1,7 @@
 # Multi-Monitor-Mouse-Teleporter
 ## A Computer Vision Project
 ### Pose Tracking Multi Monitor Mouse Teleporter
-This program tracks your head movement and can move the mouse to either monitors as you turn your gaze.
+This multi-monitor solution tracks your head movement and teleports the mouse instantly to the monitor you are looking at.
 
 ## Setup Process
 1) Make sure you have pip installed on your system
