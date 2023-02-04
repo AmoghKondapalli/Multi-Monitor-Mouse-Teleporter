@@ -80,7 +80,7 @@ while cap.isOpened():
 
             if y < -10:
                 text = "looking left"
-            elif y > 13:
+            elif y > 13.5:
                 text = "looking right"
                 if ntimes ==1:
                     autogui.moveTo(pmx+smx/2,smy/2)
